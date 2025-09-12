@@ -302,23 +302,21 @@ export default function Portfolio() {
           >
             {[
               {
-                title: "Frontend Developer",
-                company: "Startup XYZ",
-                period: "Jan 2024 - May 2024",
-                description:
-                  "Created responsive user interfaces and implemented modern design systems. Worked closely with UX designers to bring mockups to life.",
-                achievements: ["Redesigned entire user dashboard", "Implemented dark mode", "Reduced load time by 40%"],
-              },
-              {
-                title: "Sarvapriya Foundation",
+                title: "Sarvpriye Foundation",
                 company: "Web Developer Intern",
                 period: "May 2025 - Present",
-                description:
-                  "Contributing as a Web Development Intern, focusing on creating and maintaining web pages using HTML, CSS, and JavaScript.",
+                achievements: ["Developed responsive UI components to improve usability and accessibility.",
+                  "Collaborated on frontend-backend integration to ensure smooth application functionality.",
+                  "Worked on template design and layout enhancements to modernize the interface.",],
+              },
+              {
+                title: "ACM",
+                company: "Editorial Team Member",
+                period: "July 2025 - Present",
                 achievements: [
-                  "Delivered 5 client projects",
-                  "Learned 3 new frameworks",
-                  "Received excellent feedback",
+                  "Edited and reviewed technical content for clarity and accuracy.",
+                  "Collaborated on publication planning and formatting.",
+                  "Ensured consistency and quality across articles.",
                 ],
               },
             ].map((exp, index) => (
