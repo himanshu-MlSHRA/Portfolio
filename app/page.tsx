@@ -233,7 +233,7 @@ export default function Portfolio() {
                 title: "Jarvis",
                 description: "An desktop tool that converts voice instructions into automated workflows, streamlining coding, installations, and system tasks.",
                 tech: ["Future"],
-                image: "/preview/project4.png",
+                image: "/project4.png",
               },
             ].map((project, index) => (
               <div
