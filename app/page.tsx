@@ -3,7 +3,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Download, Mail, Phone, Github, Linkedin, Instagram, ExternalLink } from "lucide-react";
 import LogoLoop from "@/components/LogoLoop";
-import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss, SiNodedotjs, SiMongodb, SiPython, SiJavascript, SiHtml5, SiCss3, SiGit, SiGithub, SiVercel, SiFigma, SiDocker, SiAmazonwebservices, SiNginx, SiPostgresql, SiSocketdotio } from "react-icons/si";
+import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss, SiNodedotjs, SiMongodb, SiPython, SiJavascript, SiHtml5, SiCss3, SiGit, SiGithub, SiVercel, SiFigma, SiDocker, SiAmazonwebservices, SiNginx, SiPostgresql, SiSocketdotio, SiPostman} from "react-icons/si";
 
 export default function Portfolio() {
   {/* State Management */}
@@ -62,6 +62,7 @@ export default function Portfolio() {
     { node: <SiNginx className="text-green-600" />, title: "Nginx", href: "https://nginx.org" },
     { node: <SiPostgresql className="text-blue-700" />, title: "PostgreSQL", href: "https://postgresql.org" },
     { node: <SiSocketdotio className="text-white" />, title: "Socket.io", href: "https://socket.io" },
+    { node: <SiPostman className="text-orange-500" />, title: "Postman", href: "https://postman.com" },
   ];
 
   {/* Projects Data */}
