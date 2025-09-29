@@ -51,18 +51,18 @@ export default function Portfolio() {
     { node: <SiNodedotjs className="text-green-600" />, title: "Node.js", href: "https://nodejs.org" },
     { node: <SiPython className="text-blue-600" />, title: "Python", href: "https://python.org" },
     { node: <SiMongodb className="text-green-500" />, title: "MongoDB", href: "https://mongodb.com" },
-    { node: <SiHtml5 className="text-orange-500" />, title: "HTML5", href: "https://developer.mozilla.org/en-US/docs/Web/HTML" },
+    { node: <SiHtml5 className="text-purple-500" />, title: "HTML5", href: "https://developer.mozilla.org/en-US/docs/Web/HTML" },
     { node: <SiCss3 className="text-blue-500" />, title: "CSS3", href: "https://developer.mozilla.org/en-US/docs/Web/CSS" },
-    { node: <SiGit className="text-orange-600" />, title: "Git", href: "https://git-scm.com" },
+    { node: <SiGit className="text-purple-600" />, title: "Git", href: "https://git-scm.com" },
     { node: <SiGithub className="text-white" />, title: "GitHub", href: "https://github.com" },
     { node: <SiVercel className="text-purple-500" />, title: "Vercel", href: "https://vercel.com" },
-    { node: <SiFigma className="text-orange-200 " />, title: "Figma", href: "https://figma.com" },
+    { node: <SiFigma className="text-purple-300" />, title: "Figma", href: "https://figma.com" },
     { node: <SiDocker className="text-blue-500" />, title: "Docker", href: "https://docker.com" },
-    { node: <SiAmazonwebservices className="text-orange-400" />, title: "AWS", href: "https://aws.amazon.com" },
+    { node: <SiAmazonwebservices className="text-purple-400" />, title: "AWS", href: "https://aws.amazon.com" },
     { node: <SiNginx className="text-green-600" />, title: "Nginx", href: "https://nginx.org" },
     { node: <SiPostgresql className="text-blue-700" />, title: "PostgreSQL", href: "https://postgresql.org" },
     { node: <SiSocketdotio className="text-white" />, title: "Socket.io", href: "https://socket.io" },
-    { node: <SiPostman className="text-orange-500" />, title: "Postman", href: "https://postman.com" },
+    { node: <SiPostman className="text-purple-500" />, title: "Postman", href: "https://postman.com" },
   ];
 
   {/* Projects Data */}
@@ -119,7 +119,7 @@ export default function Portfolio() {
 
   {/* Social Links Data */}
   const socialLinks = [
-    { icon: Github, href: "https://github.com/himanshu-MlSHRA", label: "GitHub", color: "hover:bg-orange-500" },
+    { icon: Github, href: "https://github.com/himanshu-MlSHRA", label: "GitHub", color: "hover:bg-purple-700" },
     { icon: Linkedin, href: "https://www.linkedin.com/in/himanahu-mishra-b4577b20b/", label: "LinkedIn", color: "hover:bg-blue-600" },
     { 
       icon: () => (
@@ -141,13 +141,13 @@ export default function Portfolio() {
       <nav className="fixed top-0 w-full bg-black/90 backdrop-blur-sm z-50 border-b border-gray-800 py-3">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center">
-            <div className="text-xl font-bold text-orange-500">Portfolio</div>
+            <div className="text-xl font-bold text-purple-600">Portfolio</div>
             <div className="hidden md:flex space-x-6">
               {navItems.map((section) => (
                 <button
                   key={section}
                   onClick={() => scrollToSection(section)}
-                  className="hover:text-orange-500 transition-colors capitalize text-sm"
+                  className="hover:text-purple-500 transition-colors capitalize text-sm"
                 >
                   {section}
                 </button>
@@ -165,21 +165,21 @@ export default function Portfolio() {
             {/* Text Content */}
             <div className={`space-y-5 ${isVisible ? "animate-fade-in-up" : "opacity-0"}`}>
               <div className="space-y-3">
-                <p className="text-orange-500 text-base font-medium">Hello, I'm</p>
+                <p className="text-purple-500 text-base font-medium">Hello, I'm</p>
                 <div className="flex flex-col">
                   <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight">
                     HIMANSHU
                   </h1>
                   <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight">
-                    <span className="bg-orange-500 text-black px-2 py-1 rounded-lg">MISHRA</span>
+                    <span className="bg-purple-600 text-white px-2 py-1 rounded-lg">MISHRA</span>
                   </h1>
                 </div>
-                <div className="h-1 w-0 bg-orange-500 animate-expand-line"></div>
+                <div className="h-1 w-0 bg-purple-600 animate-expand-line"></div>
               </div>
 
               <h2 className="text-lg sm:text-xl lg:text-2xl leading-relaxed text-gray-300">
                 Turning ideas into interactive{" "}
-                <span className="bg-orange-500 text-black px-2 py-1 rounded font-semibold mx-1">
+                <span className="bg-purple-600 text-white px-2 py-1 rounded font-semibold mx-1">
                   web experiences
                 </span>
                 . Master skills, build projects, and make an impact.
@@ -190,14 +190,14 @@ export default function Portfolio() {
                 <a
                   href="/Himanshu_Mishra_CV.pdf"
                   download="Himanshu_Mishra_CV.pdf"
-                  className="px-4 py-2.5 bg-orange-500 hover:bg-orange-600 rounded-lg font-semibold transition-all duration-300 flex items-center gap-2 hover:scale-105 text-sm"
+                  className="px-4 py-2.5 bg-purple-600 hover:bg-purple-700 rounded-lg font-semibold transition-all duration-300 flex items-center gap-2 hover:scale-105 text-sm"
                 >
                   <Download size={16} />
                   Download CV
                 </a>
                 <button
                   onClick={() => scrollToSection("contact")}
-                  className="px-4 py-2.5 border border-orange-500 hover:bg-orange-500/10 rounded-lg font-semibold transition-all duration-300 hover:scale-105 text-sm"
+                  className="px-4 py-2.5 border border-purple-600 hover:bg-purple-600/10 rounded-lg font-semibold transition-all duration-300 hover:scale-105 text-sm"
                 >
                   Get In Touch
                 </button>
@@ -233,9 +233,9 @@ export default function Portfolio() {
             visibleSections.has("tools") ? "animate-fade-in-up" : "opacity-0 translate-y-10"
           }`}>
             <h2 className="text-3xl sm:text-4xl font-bold mb-3">
-              Essential <span className="bg-orange-500 text-black px-3 py-1 rounded-lg">Tools</span>
+              Essential <span className="bg-purple-600 text-white px-3 py-1 rounded-lg">Tools</span>
             </h2>
-            <div className={`w-20 h-1 bg-orange-500 mx-auto transition-all duration-1000 delay-300 ${
+            <div className={`w-20 h-1 bg-purple-600 mx-auto transition-all duration-1000 delay-300 ${
               visibleSections.has("tools") ? "animate-expand-line" : "w-0"
             }`}></div>
           </div>
@@ -265,9 +265,9 @@ export default function Portfolio() {
             visibleSections.has("projects") ? "animate-fade-in-up" : "opacity-0 translate-y-10"
           }`}>
             <h2 className="text-3xl sm:text-4xl font-bold mb-3">
-              Featured <span className="bg-orange-500 text-black px-3 py-1 rounded-lg">Projects</span>
+              Featured <span className="bg-purple-600 text-white px-3 py-1 rounded-lg">Projects</span>
             </h2>
-            <div className={`w-20 h-1 bg-orange-500 mx-auto transition-all duration-1000 delay-300 ${
+            <div className={`w-20 h-1 bg-purple-600 mx-auto transition-all duration-1000 delay-300 ${
               visibleSections.has("projects") ? "animate-expand-line" : "w-0"
             }`}></div>
           </div>
@@ -290,9 +290,9 @@ export default function Portfolio() {
             visibleSections.has("experience") ? "animate-fade-in-up" : "opacity-0 translate-y-10"
           }`}>
             <h2 className="text-3xl sm:text-4xl font-bold mb-3">
-              Experience & <span className="bg-orange-500 text-black px-3 py-1 rounded-lg">Internships</span>
+              Experience & <span className="bg-purple-600 text-white px-3 py-1 rounded-lg">Internships</span>
             </h2>
-            <div className={`w-20 h-1 bg-orange-500 mx-auto transition-all duration-1000 delay-300 ${
+            <div className={`w-20 h-1 bg-purple-600 mx-auto transition-all duration-1000 delay-300 ${
               visibleSections.has("experience") ? "animate-expand-line" : "w-0"
             }`}></div>
           </div>
@@ -315,9 +315,9 @@ export default function Portfolio() {
             visibleSections.has("contact") ? "animate-fade-in-up" : "opacity-0 translate-y-10"
           }`}>
             <h2 className="text-3xl sm:text-4xl font-bold mb-3">
-              Let's Work <span className="bg-orange-500 text-black px-3 py-1 rounded-lg">Together</span>
+              Let's Work <span className="bg-purple-600 text-white px-3 py-1 rounded-lg">Together</span>
             </h2>
-            <div className={`w-20 h-1 bg-orange-500 mx-auto mb-4 transition-all duration-1000 delay-300 ${
+            <div className={`w-20 h-1 bg-purple-600 mx-auto mb-4 transition-all duration-1000 delay-300 ${
               visibleSections.has("contact") ? "animate-expand-line" : "w-0"
             }`}></div>
             <p className="text-lg text-gray-400 max-w-2xl mx-auto">
@@ -351,7 +351,7 @@ export default function Portfolio() {
 {/* Project Card Component */}
 function ProjectCard({ project }: { project: any }) {
   return (
-    <div className="bg-gray-900 rounded-lg overflow-hidden hover:transform hover:scale-105 transition-all duration-300 group border border-gray-800 hover:border-orange-500">
+    <div className="bg-gray-900 rounded-lg overflow-hidden hover:transform hover:scale-105 transition-all duration-300 group border border-gray-800 hover:border-purple-600">
       <div className="relative overflow-hidden">
         <img
           src={project.image || "/placeholder.svg"}
@@ -359,10 +359,10 @@ function ProjectCard({ project }: { project: any }) {
           className="w-full h-40 sm:h-48 object-cover group-hover:scale-110 transition-transform duration-300"
           loading="lazy"
         />
-        <div className="absolute inset-0 bg-orange-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+        <div className="absolute inset-0 bg-purple-600/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
       </div>
       <div className="p-5">
-        <h3 className="text-lg font-semibold mb-2 group-hover:text-orange-500 transition-colors">
+        <h3 className="text-lg font-semibold mb-2 group-hover:text-purple-500 transition-colors">
           {project.title}
         </h3>
         <p className="text-gray-400 text-sm mb-3">{project.description}</p>
@@ -403,7 +403,7 @@ function ProjectButton({ onClick, disabled, icon: Icon, label, isDisabled }: any
       className={`flex items-center gap-2 px-3 py-2 rounded-lg border transition-all duration-200 hover:transform hover:scale-105 text-xs ${
         isDisabled 
           ? "border-gray-600 text-gray-500 bg-gray-800 cursor-not-allowed" 
-          : "border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white"
+          : "border-purple-600 text-purple-500 hover:bg-purple-600 hover:text-white"
       }`}
     >
       <Icon size={14} />
@@ -415,10 +415,10 @@ function ProjectButton({ onClick, disabled, icon: Icon, label, isDisabled }: any
 {/* Experience Card Component */}
 function ExperienceCard({ experience }: { experience: any }) {
   return (
-    <div className="bg-gray-900 rounded-lg p-5 hover:bg-gray-800 transition-colors border border-gray-800 hover:border-orange-500">
+    <div className="bg-gray-900 rounded-lg p-5 hover:bg-gray-800 transition-colors border border-gray-800 hover:border-purple-600">
       <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-3">
         <div>
-          <h3 className="text-lg font-semibold text-orange-500">{experience.title}</h3>
+          <h3 className="text-lg font-semibold text-purple-500">{experience.title}</h3>
           <p className="text-gray-300">{experience.company}</p>
         </div>
         <span className="text-gray-400 text-sm mt-1 md:mt-0">{experience.period}</span>
@@ -458,13 +458,13 @@ function ContactInfo() {
 {/* Contact Item Component */}
 function ContactItem({ icon: Icon, label, value, href }: any) {
   return (
-    <div className="flex items-start gap-3 p-3 bg-gray-900 rounded-lg hover:bg-gray-800 transition-colors border border-gray-800 hover:border-orange-500 group">
-      <div className="p-2 bg-orange-500/20 rounded-lg group-hover:bg-orange-500/30 transition-colors flex-shrink-0 mt-1">
-        <Icon className="text-orange-500" size={20} />
+    <div className="flex items-start gap-3 p-3 bg-gray-900 rounded-lg hover:bg-gray-800 transition-colors border border-gray-800 hover:border-purple-600 group">
+      <div className="p-2 bg-purple-600/20 rounded-lg group-hover:bg-purple-600/30 transition-colors flex-shrink-0 mt-1">
+        <Icon className="text-purple-500" size={20} />
       </div>
       <div className="flex-1">
         <p className="font-semibold text-gray-300 text-sm">{label}</p>
-        <a href={href} className="text-gray-400 hover:text-orange-400 transition-colors break-words text-sm">
+        <a href={href} className="text-gray-400 hover:text-purple-400 transition-colors break-words text-sm">
           {value}
         </a>
       </div>
@@ -498,22 +498,22 @@ function SocialLinks({ socialLinks }: { socialLinks: any[] }) {
 {/* Call to Action Card Component */}
 function CallToActionCard() {
   return (
-    <div className="bg-gradient-to-br from-orange-500 to-orange-600 rounded-lg p-6 text-center shadow-2xl">
-      <h3 className="text-xl font-bold mb-3 text-black">Ready to Hire Me?</h3>
-      <p className="mb-4 text-black/90 text-sm">
+    <div className="bg-gradient-to-br from-purple-700 to-purple-800 rounded-lg p-6 text-center shadow-2xl">
+      <h3 className="text-xl font-bold mb-3 text-white">Ready to Hire Me?</h3>
+      <p className="mb-4 text-white/90 text-sm">
         I'm available for freelance projects, full-time positions, and collaborations.
       </p>
       <div className="space-y-2">
         <a
           href="/Himanshu_Mishra_CV.pdf"
           download="Himanshu_Mishra_CV.pdf"
-          className="w-full block px-4 py-2.5 bg-black text-orange-500 rounded-lg font-semibold text-center hover:bg-gray-900 transition-colors hover:scale-105 transform duration-300 text-sm"
+          className="w-full block px-4 py-2.5 bg-black text-purple-500 rounded-lg font-semibold text-center hover:bg-gray-900 transition-colors hover:scale-105 transform duration-300 text-sm"
         >
           Download My Resume
         </a>
         <a
           href="tel:+917235034984"
-          className="w-full block px-4 py-2.5 border border-black text-black bg-transparent rounded-lg font-semibold text-center hover:bg-black hover:text-orange-500 transition-colors hover:scale-105 transform duration-300 text-sm"
+          className="w-full block px-4 py-2.5 border border-white text-white bg-transparent rounded-lg font-semibold text-center hover:bg-white hover:text-purple-700 transition-colors hover:scale-105 transform duration-300 text-sm"
         >
           Schedule a Call
         </a>
